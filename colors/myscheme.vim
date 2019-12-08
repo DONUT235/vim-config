@@ -3,7 +3,7 @@ let g:colors_name="myscheme"
 
 hi link SpellBad Error
 hi link LineNr Statement
-hi MatchParen guibg=NONE guifg=NONE ctermbg=NONE ctermfg=NONE cterm=bold,underline,italic
+hi MatchParen guibg=NONE guifg=NONE ctermbg=NONE ctermfg=NONE cterm=bold,underline,italic gui=bold,underline,italic
 
 if has("gui_running") || &t_Co==256
 	"basic stuff
