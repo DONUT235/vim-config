@@ -39,3 +39,5 @@ vnoremap <Leader>' c''<Esc>P
 vnoremap <Leader>{ c{}<Esc>P
 vnoremap <Leader>[ c[]<Esc>P
 nnoremap <Leader>J Xi<CR><Esc>
+nnoremap [[ ?\v(^\{)\|^\S.*\{<CR>
+nnoremap ]] /\v(^\{)\|^\S.*\{<CR>
