@@ -2,6 +2,7 @@ execute pathogen#infect()
 filetype plugin indent on
 syntax on
 set number
+runtime! ftplugin/man.vim
 set showcmd
 set wildmenu
 set tabstop=4 shiftwidth=4 softtabstop=0 noexpandtab
@@ -26,8 +27,6 @@ inoremap (<CR> (<CR>)<C-o>O
 inoremap [<CR> [<CR>]<C-o>O
 nnoremap Y y$
 vnoremap <C-h> :s/\v//cg<Left><Left><Left><Left>
-noremap / /\v
-noremap ? ?\v
 noremap <Leader>b :ls<CR>:b<Space>
 nnoremap <C-j> :bn<CR>
 nnoremap <C-k> :bp<CR>
