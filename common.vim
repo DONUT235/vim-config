@@ -4,6 +4,7 @@ syntax on
 set number
 runtime! ftplugin/man.vim
 packadd! matchit
+set rtp+=/usr/local/opt/fzf
 set showcmd
 set wildmenu
 set tabstop=4 shiftwidth=4 softtabstop=0 noexpandtab
@@ -29,6 +30,7 @@ inoremap [<CR> [<CR>]<C-o>O
 nnoremap Y y$
 vnoremap <C-h> :s/\v//cg<Left><Left><Left><Left>
 noremap <Leader>b :ls<CR>:b<Space>
+noremap <Leader>f :Files<CR>
 nnoremap <C-j> :bn<CR>
 nnoremap <C-k> :bp<CR>
 noremap <F2> :Vex<CR>
