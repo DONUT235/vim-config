@@ -28,8 +28,12 @@ inoremap (<CR> (<CR>)<C-o>O
 inoremap [<CR> [<CR>]<C-o>O
 nnoremap Y y$
 vnoremap <C-h> :s/\v//cg<Left><Left><Left><Left>
-noremap <Leader>b :ls<CR>:b<Space>
-noremap <Leader>f :Files<CR>
+if &rtp =~ 'fzf'
+	nnoremap <Leader>b :Buffers<CR>
+	noremap <Leader>f :Files<CR>
+else
+	noremap <Leader>b :ls<CR>:b<Space>
+endif
 nnoremap <C-j> :bn<CR>
 nnoremap <C-k> :bp<CR>
 noremap <F2> :Vex<CR>
