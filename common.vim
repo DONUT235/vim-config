@@ -4,7 +4,6 @@ syntax on
 set number
 runtime! ftplugin/man.vim
 packadd! matchit
-set rtp+=/usr/local/opt/fzf
 set showcmd
 set wildmenu
 set tabstop=4 shiftwidth=4 softtabstop=0 noexpandtab
