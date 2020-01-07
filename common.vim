@@ -1,3 +1,4 @@
+let g:gutentags_add_default_project_roots = 0
 execute pathogen#infect()
 filetype plugin indent on
 syntax on
@@ -9,7 +10,7 @@ set wildmenu
 set tabstop=4 shiftwidth=4 softtabstop=0 noexpandtab
 set nowrap
 set hidden
-set wildignore+=*/node_modules/*
+set wildignore+=node_modules,node_modules/**
 set guicursor+=n:hor20-Cursor
 set guifont=DejaVu\ Sans\ Mono:h9
 set backspace=1
@@ -29,14 +30,16 @@ inoremap [<CR> [<CR>]<C-o>O
 nnoremap Y y$
 vnoremap <C-h> :s/\v//cg<Left><Left><Left><Left>
 if &rtp =~ 'fzf'
-	nnoremap <Leader>b :Buffers<CR>
+	"fzf.vim mappings
+	noremap <Leader>b :Buffers<CR>
 	noremap <Leader>f :Files<CR>
+	noremap <Leader>t :Tags<CR>
 else
 	noremap <Leader>b :ls<CR>:b<Space>
 endif
+noremap <F2> :Vex<CR>
 nnoremap <C-j> :bn<CR>
 nnoremap <C-k> :bp<CR>
-noremap <F2> :Vex<CR>
 vnoremap <Leader>( c()<Esc>P
 vnoremap <Leader>< c<><Esc>P
 vnoremap <Leader>" c""<Esc>P
