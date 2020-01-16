@@ -47,5 +47,5 @@ vnoremap <Leader>' c''<Esc>P
 vnoremap <Leader>{ c{}<Esc>P
 vnoremap <Leader>[ c[]<Esc>P
 nnoremap <Leader>J Xi<CR><Esc>
-nnoremap [[ ?\v(^\{)\|^\S[^(]*\(\_[^)]*\)\s*\{<CR>
-nnoremap ]] /\v(^\{)\|^\S[^(]*\(\_[^)]*\)\s*\{<CR>
+nnoremap [[ []%
+nnoremap ]] /\v(^\{)\|^\S[^(]*\(<CR>/{\ze\s*$<CR>
