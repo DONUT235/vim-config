@@ -37,7 +37,6 @@ if &rtp =~ 'fzf'
 else
 	noremap <Leader>b :ls<CR>:b<Space>
 endif
-noremap <F2> :Vex<CR>
 nnoremap <C-j> :bn<CR>
 nnoremap <C-k> :bp<CR>
 vnoremap <Leader>( c()<Esc>P
@@ -47,5 +46,7 @@ vnoremap <Leader>' c''<Esc>P
 vnoremap <Leader>{ c{}<Esc>P
 vnoremap <Leader>[ c[]<Esc>P
 nnoremap <Leader>J Xi<CR><Esc>
-nnoremap [[ []%
-nnoremap ]] /\v(^\{)\|^\S[^(]*\(<CR>/{\ze\s*$<CR>
+nnoremap ]] /\v^\ze\S*\(<CR>
+nnoremap [[ ?\v^\ze\S*\(<CR>
+onoremap ]] /\v^\ze\S*\(<CR>
+onoremap [[ ?\v^\ze\S*\(<CR>
