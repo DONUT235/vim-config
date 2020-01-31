@@ -46,7 +46,7 @@ vnoremap <Leader>' c''<Esc>P
 vnoremap <Leader>{ c{}<Esc>P
 vnoremap <Leader>[ c[]<Esc>P
 nnoremap <Leader>J Xi<CR><Esc>
-nnoremap ]] /\v^\ze\S*\(<CR>
-nnoremap [[ ?\v^\ze\S*\(<CR>
-onoremap ]] /\v^\ze\S*\(<CR>
-onoremap [[ ?\v^\ze\S*\(<CR>
+nnoremap ]] /\v^\ze\S.*\(<CR>
+nnoremap [[ ?\v^\ze\S.*\(<CR>
+onoremap ]] /\v^\ze\S.*\(<CR>
+onoremap [[ ?\v^\ze\S.*\(<CR>
