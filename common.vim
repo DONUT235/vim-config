@@ -37,6 +37,7 @@ if &rtp =~ 'fzf'
 else
 	noremap <Leader>b :ls<CR>:b<Space>
 endif
+noremap <F2> :Ex<CR>
 nnoremap <C-j> :bn<CR>
 nnoremap <C-k> :bp<CR>
 vnoremap <Leader>( c()<Esc>P
