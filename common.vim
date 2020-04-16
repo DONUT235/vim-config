@@ -16,6 +16,7 @@ set guifont=DejaVu\ Sans\ Mono:h9
 set backspace=1
 set encoding=utf-8
 set foldopen-=block foldopen-=hor foldclose=all
+set colorcolumn=80
 colo myscheme
 let g:jsx_ext_required = 0
 let g:tex_flavor = "latex"
