@@ -30,13 +30,13 @@ inoremap (<CR> (<CR>)<C-o>O
 inoremap [<CR> [<CR>]<C-o>O
 nnoremap Y y$
 vnoremap <C-h> :s/\v//cg<Left><Left><Left><Left>
-if &rtp =~ 'fzf'
+if !exists("g:ihave_fzf") || !g:ihave_fzf
+	noremap <Leader>b :ls<CR>:b<Space>
+else
 	"fzf.vim mappings
 	noremap <Leader>b :Buffers<CR>
 	noremap <Leader>f :Files<CR>
 	noremap <Leader>t :Tags<CR>
-else
-	noremap <Leader>b :ls<CR>:b<Space>
 endif
 noremap <F2> :Ex<CR>
 nnoremap <C-j> :bn<CR>
