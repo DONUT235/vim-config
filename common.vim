@@ -13,7 +13,7 @@ set hidden
 set wildignore+=node_modules,node_modules/**
 set guicursor+=n:hor20-Cursor
 set guifont=DejaVu\ Sans\ Mono:h9
-set backspace=1
+set backspace=2
 set encoding=utf-8
 set foldopen-=block foldopen-=hor foldclose=all
 set colorcolumn=80
