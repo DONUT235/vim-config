@@ -4,7 +4,6 @@ filetype plugin indent on
 syntax on
 set number
 runtime! ftplugin/man.vim
-packadd! matchit
 set showcmd
 set wildmenu
 set tabstop=4 shiftwidth=4 softtabstop=0 noexpandtab
