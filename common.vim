@@ -8,6 +8,7 @@ set showcmd
 set wildmenu
 set tabstop=4 shiftwidth=4 softtabstop=0 noexpandtab
 set nowrap
+set nohlsearch noincsearch
 set hidden
 set wildignore+=node_modules,node_modules/**
 set guicursor+=n:hor20-Cursor,a:blinkwait175-blinkoff500-blinkon500
