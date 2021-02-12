@@ -26,7 +26,7 @@ let mapleader = " "
 command StripUselessWhitespace :%s/\v\s+$//g
 set statusline=%f%m%r%=Line\ %l/%L,\ column\ %c laststatus=2
 nnoremap <C-h> :%s/\v//cg<Left><Left><Left><Left>
-nnoremap <C-@> @@
+nnoremap <C-2> @@
 inoremap {<CR> {<CR>}<C-o>O
 inoremap (<CR> (<CR>)<C-o>O
 inoremap [<CR> [<CR>]<C-o>O
@@ -54,3 +54,4 @@ nnoremap ]] /\v^\ze\S.*\(<CR>
 nnoremap [[ ?\v^\ze\S.*\(<CR>
 onoremap ]] /\v^\ze\S.*\(<CR>
 onoremap [[ ?\v^\ze\S.*\(<CR>
+command! W :w

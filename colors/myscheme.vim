@@ -10,20 +10,20 @@ if has("gui_running") || &t_Co==256
 	hi Visual ctermbg=8 guibg=#aaaaaa
 	hi Normal guifg=#ffffff guibg=#000000 ctermfg=15
 	hi Constant guifg=#ff00ff ctermfg=13
-	hi Type guifg=#00ff00 ctermfg=82
-	hi Statement guifg=#ffff00 ctermfg=226
-	hi PreProc guifg=#0000ff ctermfg=21
+	hi Type guifg=#00ff00 ctermfg=10
+	hi Statement guifg=#ffff00 ctermfg=11
+	hi PreProc guifg=#0080ff ctermfg=33
 	hi Comment guifg=#ff8000 ctermfg=208
-	hi Special guifg=#ff0000 ctermfg=196
+	hi Special guifg=#ff0000 ctermfg=9
 	hi Todo guifg=#000000 guibg=#808000 ctermbg=100 ctermfg=0
-	hi Identifier ctermfg=51 guifg=#00ffff
-	hi Error ctermbg=196 ctermfg=15 guibg=#ff0000 guifg=#ffffff
+	hi Identifier ctermfg=14 guifg=#00ffff
+	hi Error ctermbg=9 ctermfg=15 guibg=#ff0000 guifg=#ffffff
 	"vim internal
 	hi Search ctermbg=11 ctermfg=0 guibg=#ffff00 guifg=#000000
 	"diffs
 	hi DiffChange ctermbg=5 guibg=#880088
 	hi DiffDelete ctermfg=NONE ctermbg=30 guifg=NONE guibg=#008888
-	hi DiffText ctermbg=204
+	hi DiffText ctermbg=204 guibg=#ff5f87
 else
 	"basic stuff
 	hi Visual ctermbg=LightGray
