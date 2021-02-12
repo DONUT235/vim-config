@@ -16,7 +16,6 @@ if !has('nvim')
 	set guifont=DejaVu\ Sans\ Mono:h9
 	nnoremap <C-@> @@
 else
-	"TODO get @
 	nnoremap <C-2> @@
 endif
 set backspace=2
