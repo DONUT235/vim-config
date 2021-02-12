@@ -14,6 +14,10 @@ set wildignore+=node_modules,node_modules/**
 set guicursor+=n:hor20-Cursor,a:blinkwait175-blinkoff500-blinkon500
 if !has('nvim')
 	set guifont=DejaVu\ Sans\ Mono:h9
+	nnoremap <C-@> @@
+else
+	"TODO get @
+	nnoremap <C-2> @@
 endif
 set backspace=2
 set encoding=utf-8
@@ -26,7 +30,6 @@ let mapleader = " "
 command StripUselessWhitespace :%s/\v\s+$//g
 set statusline=%f%m%r%=Line\ %l/%L,\ column\ %c laststatus=2
 nnoremap <C-h> :%s/\v//cg<Left><Left><Left><Left>
-nnoremap <C-2> @@
 inoremap {<CR> {<CR>}<C-o>O
 inoremap (<CR> (<CR>)<C-o>O
 inoremap [<CR> [<CR>]<C-o>O
