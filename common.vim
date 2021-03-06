@@ -6,17 +6,17 @@ set number
 runtime! ftplugin/man.vim
 set showcmd
 set wildmenu
-set tabstop=4 shiftwidth=4 softtabstop=0 noexpandtab
+set shiftwidth=4 softtabstop=4 expandtab
 set nowrap
 set nohlsearch noincsearch
 set hidden
 set wildignore+=node_modules,node_modules/**
 set guicursor+=n:hor20-Cursor,a:blinkwait175-blinkoff500-blinkon500
 if !has('nvim')
-	set guifont=DejaVu\ Sans\ Mono:h9
-	nnoremap <C-@> @@
+    set guifont=DejaVu\ Sans\ Mono:h9
+    nnoremap <C-@> @@
 else
-	nnoremap <C-2> @@
+    nnoremap <C-2> @@
 endif
 set backspace=2
 set encoding=utf-8
@@ -35,12 +35,12 @@ inoremap [<CR> [<CR>]<C-o>O
 nnoremap Y y$
 vnoremap <C-h> :s/\v//cg<Left><Left><Left><Left>
 if !exists("g:ihave_fzf") || !g:ihave_fzf
-	noremap <Leader>b :ls<CR>:b<Space>
+    noremap <Leader>b :ls<CR>:b<Space>
 else
-	"fzf.vim mappings
-	noremap <Leader>b :Buffers<CR>
-	noremap <Leader>f :Files<CR>
-	noremap <Leader>t :Tags<CR>
+    "fzf.vim mappings
+    noremap <Leader>b :Buffers<CR>
+    noremap <Leader>f :Files<CR>
+    noremap <Leader>t :Tags<CR>
 endif
 noremap <F2> :Ex<CR>
 nnoremap <C-j> :bn<CR>
