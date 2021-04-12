@@ -14,10 +14,8 @@ set wildignore+=node_modules,node_modules/**
 set guicursor+=n:hor20-Cursor,a:blinkwait175-blinkoff500-blinkon500
 if !has('nvim')
     set guifont=DejaVu\ Sans\ Mono:h9
-    nnoremap <C-@> @@
-else
-    nnoremap <C-2> @@
 endif
+nnoremap <C-Space> @@
 set backspace=2
 set encoding=utf-8
 set foldopen-=block foldopen-=hor foldclose=all
