@@ -1,3 +1,6 @@
 [submodule "kotlin-vim"]
 	path = bundle/kotlin-vim
 	url = https://github.com/udalov/kotlin-vim
+[submodule "bundle/fzf.vim"]
+	path = bundle/fzf.vim
+	url = https://github.com/junegunn/fzf.vim
