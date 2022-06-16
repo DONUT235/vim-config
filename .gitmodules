@@ -1,3 +1,3 @@
-[submodule "/Users/aaronglave-mbpr16/.vim/bundle/kotlin-vim"]
-	path = /Users/aaronglave-mbpr16/.vim/bundle/kotlin-vim
+[submodule "kotlin-vim"]
+	path = bundle/kotlin-vim
 	url = https://github.com/udalov/kotlin-vim
